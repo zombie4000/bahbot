@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  bahbot:
+    build: .
+    image: bah/bahbot:1.1.5
+    container_name: bahbot
+    restart: unless-stopped
+    network_mode: host
+    environment:
+      - TOKEN="Bot token goes here"

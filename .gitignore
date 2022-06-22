@@ -1,0 +1,8 @@
+# ignore python virtual environment
+venv/
+
+# ignore real docker-compose.yml
+docker-compose.yml
+
+# ignore git files
+.git
