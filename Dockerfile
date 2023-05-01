@@ -1,5 +1,4 @@
-FROM python:3-alpine
-
+FROM python:alpine
 LABEL author="dracz"
 LABEL version="1.1.5"
 

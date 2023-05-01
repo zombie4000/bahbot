@@ -3,7 +3,11 @@ import random
 from discord.ext import commands
 import argparse
 
-client = commands.Bot(command_prefix='!')
+intents = discord.Intents.default()
+intents.members = True
+intents.message_content = True
+
+client = commands.Bot(command_prefix='!', intents=intents)
 
 @client.event
 async def on_ready():
@@ -72,4 +76,4 @@ args = parser.parse_args()
 if args.t == 'token':
 	sys.stdout.write('Please provide a token')
 else:
-	client.run(args.t)
+    client.run(args.t)
